@@ -7,6 +7,7 @@
 
 <link href="css/survey.css" type="text/css" rel="stylesheet" />
 <script src="js/jquery.ko.min.js"></script>
+    <script>
 Survey.Survey.cssType = "bootstrap";
 var survey = new Survey.Model({
 triggers: [{ type: "complete", name: "exit1", operator: "equal", value: "Yes" },
@@ -37,4 +38,7 @@ pages: [
 }]});
 
 $("#surveyElement").Survey({model:survey});
-
+    </style>
+    </script>
+    </body>
+</html>
